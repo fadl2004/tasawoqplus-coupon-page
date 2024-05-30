@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    animation: backgroundAnimation 5s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: #f7f7f7; }
+    100% { background-color: #ffe0e0; }
+}
+
+.coupon {
+    border: 5px dashed #ff6f61;
+    width: 350px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: couponAnimation 1s ease-in-out;
+}
+
+@keyframes couponAnimation {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+.logo-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    max-width: 80px;
+    
+}
+
+@keyframes logoAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #ff6f61;
+}
+
+.promo {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.promo-code {
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.expiry {
+    color: #888;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ff6f61;
+}
+
+.apply-btn, .copy-btn {
+    background-color: #f39c12;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover, .copy-btn:hover {
+    background-color: #e67e22;
+    animation: buttonHover 0.5s infinite alternate;
+}
+
+@keyframes buttonHover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
