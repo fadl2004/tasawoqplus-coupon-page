@@ -7,5 +7,5 @@ function copyCoupon() {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
     alert("تم نسخ الكوبون بنجاح! يمكنك الانتقال إلى صفحة التسوق.");
-    window.location.href = "https://tasawoqplus.easy-orders.net/"; // تغيير الرابط إلى الرابط الفعلي الذي تريد توجيه المستخدمين إليه بعد الانتهاء من النسخ
+    window.location.href = "https://msperfume.myeasyorders.com/"; // تغيير الرابط إلى الرابط الفعلي الذي تريد توجيه المستخدمين إليه بعد الانتهاء من النسخ
 }
